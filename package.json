@@ -12,10 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
-    "debounce": "^3.0.0",
-    "debounce-async": "^0.0.2",
     "ky": "^2.0.1",
-    "lyricsovh-lib": "^1.0.2",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "tailwindcss": "^4.2.2"

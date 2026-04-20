@@ -11,18 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.2.2
         version: 4.2.2(vite@8.0.9(jiti@2.6.1))
-      debounce:
-        specifier: ^3.0.0
-        version: 3.0.0
-      debounce-async:
-        specifier: ^0.0.2
-        version: 0.0.2
       ky:
         specifier: ^2.0.1
         version: 2.0.1
-      lyricsovh-lib:
-        specifier: ^1.0.2
-        version: 1.0.2
       react:
         specifier: ^19.2.5
         version: 19.2.5
@@ -533,13 +524,6 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  debounce-async@0.0.2:
-    resolution: {integrity: sha512-iSDXfVl3aVGmukEnBQshFAzooCsKdZb1KmdbivsY4zeFEzT9IfEQdys1/wHIZovXZskF6MQpstnMOxQojLVjsw==}
-
-  debounce@3.0.0:
-    resolution: {integrity: sha512-64byRbF0/AirwbuHqB3/ZpMG9/nckDa6ZA0yd6UnaQNwbbemCOwvz2sL5sjXLHhZHADyiwLm0M5qMhltUUx+TA==}
-    engines: {node: '>=20'}
-
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
@@ -834,9 +818,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  lyricsovh-lib@1.0.2:
-    resolution: {integrity: sha512-evbQLF5mjaVpYNLKuJhHYTG/WwSb8cx6woA8nlSYzxviCQOzJU3ZlEIzLv0n+UpbCi/WAVPu6Yma5yp4rRBKuw==}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
@@ -1470,10 +1451,6 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  debounce-async@0.0.2: {}
-
-  debounce@3.0.0: {}
-
   debug@4.4.3:
     dependencies:
       ms: 2.1.3
@@ -1729,8 +1706,6 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
-
-  lyricsovh-lib@1.0.2: {}
 
   magic-string@0.30.21:
     dependencies:
