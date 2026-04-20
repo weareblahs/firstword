@@ -56,22 +56,21 @@ function App() {
         </div>
         <div className="fixed bottom-0 left-0 right-0 p-6 text-center">
           {info.length !== 0 && (
-            <p>
-              Currently viewing {info[1]} by {info[0]}
+            <p className="text-sm lg:text-base">
+              Currently viewing {info[1]} by {info[0]}. Wrong song? Try
+              searching with the artist name
             </p>
           )}
           {res === "???" && (
-            <p>
-              <b>Seeing this?</b> This song has no lyrics at the moment.
+            <p className="text-sm lg:text-base mb-2">
+              <b>Seeing this?</b> This song has no lyrics at the moment, or the
+              song is an instrumental-only song.
             </p>
           )}
-          <br />
-          <p>
+          <p className="text-sm lg:text-base">
             Lyrics data from the <a href="https://lyrics.ovh">Lyrics.ovh</a> API
             (<a href="https://github.com/NTag/lyrics.ovh">source code</a>). Used
-            under MIT License.
-            <br />
-            Made by Tan (weareblahs).{" "}
+            under MIT License. Made by Tan (weareblahs).{" "}
             <a href="https://github.com/weareblahs/">Source code</a>
           </p>
         </div>

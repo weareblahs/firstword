@@ -21,22 +21,28 @@ export const fetchLyrics = async (songName) => {
 
       if (preprocessData) {
         // found lyrics with exact name as song
-        constructed = `${preprocessData.artist.name.replace(",", "").replace("&", "and")}/${preprocessData.title
-          .replace(",", "")
-          .replace("&", "and")
-          .replace("/", " ")
-          .replace("'", "")
-          .replace(/(\(.*?\).*?)\(.*?\).*/, "$1")}}`;
+        constructed =
+          preprocessData.artist.name.replace(",", "").replace("&", "and") +
+          "/" +
+          preprocessData.title
+            .replace(",", "")
+            .replace("&", "and")
+            .replace("/", " ")
+            .replace("'", "")
+            .replace(/(\(.*?\).*?)\(.*?\).*/, "$1");
         info[0] = preprocessData.artist.name;
         info[1] = preprocessData.title;
       } else {
         // else get first from index
-        constructed = `${data.data[0].artist.name.replace(",", "").replace("&", "and")}/${data.data[0].title
-          .replace(",", "")
-          .replace("&", "and")
-          .replace("/", " ")
-          .replace("'", "")
-          .replace(/(\(.*?\).*?)\(.*?\).*/, "$1")}`;
+        constructed =
+          data.data[0].artist.name.replace(",", "").replace("&", "and") +
+          "/" +
+          data.data[0].title
+            .replace(",", "")
+            .replace("&", "and")
+            .replace("/", " ")
+            .replace("'", "")
+            .replace(/(\(.*?\).*?)\(.*?\).*/, "$1");
         info[0] = data.data[0].artist.name;
         info[1] = data.data[0].title;
       }
