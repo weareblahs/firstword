@@ -61,8 +61,8 @@ function App() {
         <div className="fixed bottom-0 left-0 right-0 p-6 text-center">
           {info.length !== 0 && (
             <p className="text-sm lg:text-base">
-              Currently viewing {info[1]} by {info[0]}. Wrong song? Try
-              searching with the artist name
+              {info[1]} by {info[0]}. Wrong song? Try searching with the artist
+              name
             </p>
           )}
           {res === "???" && (
